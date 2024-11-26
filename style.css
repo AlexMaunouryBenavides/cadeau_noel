@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--fontTitles: "Cookie", "cursive";
+	--fontTexte: "Charm", "serif";
+}
+
+body {
+	background-color: #87c38f;
+	color: #43291f;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 10px;
+}
+header h1 {
+	font-size: 56px;
+	font-family: var(--fontTitles);
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: underline 1px;
+}
+header p {
+	font-size: 24px;
+	font-family: var(--fontTexte);
+
+	padding: 5px 0;
+}
+.name-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.name-container button {
+	border: 1px solid #43291f;
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 20px;
+	font-family: var(--fontTexte);
+	font-weight: bold;
+	font-style: normal;
+	box-shadow: 1px 1px 15px rgba(67, 41, 31, 0.4);
+	transition: 0.3s ease;
+}
+.active {
+	transform: scale(1.2);
+	color: #f4f0bb;
+	border: 1px solid #da2c38;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+main h2 {
+	font-size: 32px;
+	text-align: center;
+	padding: 5px 50px;
+	font-family: var(--fontTitles);
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: underline 1px;
+}
+.btn-click {
+	padding: 10px 0;
+	width: 80%;
+	margin: 15px 0;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #43291f;
+	background-color: #226f54;
+	transition: 0.3s ease;
+	color: #f4f0bb;
+	font-family: var(--fontTexte);
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24px;
+}
+.btn-click:focus {
+	outline: none;
+	background-color: #43291f;
+	transform: scale(1.1);
+}
+
+.result {
+	font-size: 40px;
+	font-family: var(--fontTitles);
+	font-weight: 400;
+	font-style: normal;
+	padding: 20px 50px;
+	box-shadow: 1px 1px 10px rgba(67, 41, 31, 0.4);
+	color: #da2c38;
+	transition: transform 0.3s ease-in-out;
+}
+.result:hover {
+	transform: scaleX(1.2);
+}
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+footer h2 {
+	font-size: 34px;
+	text-align: center;
+	padding: 5px 50px;
+	font-family: var(--fontTitles);
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: underline 1px;
+}
+.reset {
+	padding: 15px 0;
+	width: 80%;
+	margin: 30px 0;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #43291f;
+	background-color: #f4f0bb;
+	transition: 0.3s ease;
+	color: #43291f;
+	font-family: var(--fontTexte);
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24px;
+}
